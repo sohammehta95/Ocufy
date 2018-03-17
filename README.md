@@ -1,4 +1,4 @@
 # Ocufy
 A Mobile Eye-Testing Interface
 
-![Intro] (head.png)
+<img src="head.png/>
