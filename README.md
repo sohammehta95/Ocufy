@@ -33,3 +33,43 @@ To overcome the issue of expensive software and due to the increased availabilit
 </p>
 
 
+# METHOD
+
+To make the eye test mobile, we first need to understand how the traditional eye testing system works. We also need to understand how the results are evaluated for this test. Moreover, it has to be learned how can this method be converted so as to be viable to implement in a small phone screen.
+
+
+## 1) Understanding the Snellen Chart
+A Snellen chart is an eye chart that can be used to measure visual acuity. Snellen charts are named after the Dutch ophthalmologist Herman Snellen, who developed the chart in 1862. The normal Snellen chart is printed with eleven lines of block letters. The first line consists of one very large letter, which may be one of several letters, for example, E, H, or N. Subsequent rows have increasing numbers of letters that decrease in size. A person taking the test covers one eye from 6 meters or 20 feet away, and reads aloud the letters of each row, beginning at the top. The smallest row that can be read accurately indicates the visual acuity in that specific eye. The symbols on an acuity chart are formally known as "optotypes"
+
+<p align="center">
+  <img src="img/snellen.png"/>
+</p>
+
+## 2) Optotypes and their Characteristics
+In the case of the traditional Snellen chart, the optotypes have the appearance of block letters and are intended to be seen and read as letters. They are not, however, letters from any ordinary typographer's font. They have a particular, simple geometry with some unique characteristics. The following are the features of the optotypes:
+•	Snellen developed optotypes using symbols based in a 5×5-unit grid so that the size of the critical detail (each gap width) subtends 1/5th of the overall height
+•	The thickness of the lines equals the thickness of the white spaces between line
+•	The height and width of the optotype (letter) is five times the thickness of the line.
+
+<p align="center">
+  <img src="img/opto.png"/>
+</p>
+
+## 3) Constructing Visual Acuity Chart
+
+Before constructing a Visual Acuity Chart, one needs to know and decide what kind of chart one wants to construct. There are actually different kinds of charts for visual acuity measurement with Snellen chart being the most common. Based on construction they generally fall into two categories, Snellen and logMAR [11]. Visual Acuity Chart can be constructed based on 2 criteria: 
+
+1.	Measurement of minimum separable acuity
+2.	Measurement of minimum recognizable acuity
+
+Two distinct points can only be recognized as separate when they subtend an angle of one minute arc at nodal point of eye.
+
+
+## 4) Defining Standard Vision
+Snellen defined “standard vision” as the ability to recognize one of the optotypes when it subtends an angle of 5 minutes of arc. It is a representation of visual acuity in the form of a fraction (e.g. 6/6, 20/20) in which the numerator is the testing distance, and the denominator is the distance at which smallest Snellen letter read by the eye has an angular size of 5 minutes.
+
+<p align="center">
+  <img src="img/eq.png"/>
+</p>
+
+For example, 6/60 means the ability to see an object only at 6 meters which should be normally seen at 60 meters. At 6-meter (20 ft.), the letters on the 6/60 (or 20/20) line should subtend 5 minutes of arc (each limb of the letters subtend 1 minute of arc)
