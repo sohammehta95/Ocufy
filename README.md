@@ -126,3 +126,4 @@ It is rightly said that ‘What do you do after you achieve one goal? You look f
 3) Provide relevant doctor suggestions in the nearby locality (using maps API) if the user requires to immediately check up with an ophthalmologist.
 4) Increase the functionality of the application by providing tests to check color blindness, astigmatism, contrast/sensitivity, cataract detection, duo-chrome acuity etc.
 
+### Please Check the Technical Paper attached to find the list of References.
