@@ -107,8 +107,8 @@ This module is one of the most important part of the application. This helps in 
 The test is conducted in the manner that the optotypes on basis of a Snellen factor are shown to the user. These optotypes keep decreasing in size. This decrease in size is also kept uniform to get the most accurate result. After looking at the optotype, the user has an option to select which symbol he/she just saw on the screen. The user can select from one of the four options provided. The options are also given in such a way that the user cannot simply guess on the basis of the shape of the optotype shown. For example, when the optotype “C” is shown, the options are kept in a way that user cannot guess the answer on the basis of the shape of C. So the options are shown along with “C” are generally “G”, “O”, “D” etc.
 
 <p align="center">
-  <img src="img/tt.png"/>
-  <img src="img/res.png"/>
+  <img src="img/1.png"/>
+  <img src="img/2.png"/>
 
 
 # Evaluation
