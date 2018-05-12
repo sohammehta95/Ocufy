@@ -33,7 +33,7 @@ To overcome the issue of expensive software and due to the increased availabilit
 </p>
 
 
-# METHOD
+# Method
 
 To make the eye test mobile, we first need to understand how the traditional eye testing system works. We also need to understand how the results are evaluated for this test. Moreover, it has to be learned how can this method be converted so as to be viable to implement in a small phone screen.
 
@@ -73,3 +73,32 @@ Snellen defined “standard vision” as the ability to recognize one of the opt
 </p>
 
 For example, 6/60 means the ability to see an object only at 6 meters which should be normally seen at 60 meters. At 6-meter (20 ft.), the letters on the 6/60 (or 20/20) line should subtend 5 minutes of arc (each limb of the letters subtend 1 minute of arc)
+
+## 5) Finding the Height and Width of Optotypes for Mobiles
+
+Finally, the knowledge of all this information can be used to find the dimensions of the optotypes for conducting an eye test in mobile. Only if we strictly follow these dimensions, can we get an accurate eye result. We know that at exactly 6 meters distance from the patient, the letters on the 6/6 line shall subtend 5 minutes of arc (such that the individual limbs of the letters subtend 1 minute of arc), which means that the chart should be sized such that these letters are 8.73 mm tall and the topmost (6/60) "E" should be 87.3 mm tall. We get the formula
+
+<p align="center">
+  <img src="img/seq.png"/>
+</p>
+
+
+where w is the optotype height or width (which are the same due to the optotype being on a square grid), d is the distance from eye to chart, and θ is the angle subtended by the optotype (which is 5 arcminutes as specified by Snellen).
+
+These calculations result into finding a scaling factor by which we can decide the size of the topmost optotype for a mobile eye test. It is found that the eye should be at a distance 68.76 times the height of the top (6/60) letter. This is how human computer interaction methodologies and its understanding can be used to make these optotypes suitable for the phone’s screen.
+
+
+# Implementation
+The first phase of designing the system is to select an architecture. The diagram shows the architecture of the proposed system, where a 2-tier client-server architecture is selected. The main reason for selecting the said framework is that we can store the information of the user who wants to test their eyes. This will help us keep a record of the users while also being able to track users history of eye check-ups. Lastly, by getting the users information, we can create a unique test based on the user's age, gender, location etc. Hence a database is used to store the information of the user’s details and his/her eye test results. 
+
+<p align="center">
+  <img src="img/sysac.png"/>
+</p>
+ The architecture of the system is thus divided into two layers, namely, the client side layer and the server side layer. At the client side, the user interacts with the system using the Graphical User Interface (GUI) where the user first has to enter his/her information i.e. the name, age, and gender. Then, the face detection module starts where the user has to calibrate and find the distance between the face and the screen. Once this distance is found and the minimum distance threshold is maintained, the user can proceed to give the test. This test involves the user to close one eye and answer all the questions. This same is repeated for the other eye.
+
+## 1) Face Detection and Caliberation 
+This module is one of the most important part of the application. This helps in finding the distance between the phone and the screen of the user. The face detection can be done with the help of pre-built Android Face Detection libraries. In turn, this distance parameter helps to build the most accurate eye testing application. The detected face can provide us the results of the distance between the eyes. 
+<p align="center">
+  <img src="img/per.png"/>
+  <img src="img/girl.png"/>
+</p>
