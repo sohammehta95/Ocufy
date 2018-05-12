@@ -1,4 +1,4 @@
-![Head](head.png)
+![Head](img/head-2.png)
 
 
 View the Presntation of the Project here:
