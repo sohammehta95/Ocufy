@@ -102,3 +102,27 @@ This module is one of the most important part of the application. This helps in 
   <img src="img/per.png"/>
   <img src="img/girl.png"/>
 </p>
+
+## 2) Eye Test
+The test is conducted in the manner that the optotypes on basis of a Snellen factor are shown to the user. These optotypes keep decreasing in size. This decrease in size is also kept uniform to get the most accurate result. After looking at the optotype, the user has an option to select which symbol he/she just saw on the screen. The user can select from one of the four options provided. The options are also given in such a way that the user cannot simply guess on the basis of the shape of the optotype shown. For example, when the optotype “C” is shown, the options are kept in a way that user cannot guess the answer on the basis of the shape of C. So the options are shown along with “C” are generally “G”, “O”, “D” etc.
+
+<p align="center">
+  <img src="img/tt.png"/>
+  <img src="img/res.png"/>
+
+
+# Evaluation
+In order to find the accuracy of the developed system, we conducted a user study where each user was given our system and another android application “EyeTest” available in the play store. The results of both these tests were recorded and also the original eye score of the user was recorded if the user had already conducted an eye test with a doctor before. The goal of the user study was to find out if the results provided by the application is accurate to the actual vision of the respondent. 0 respondents of the age group 20-35 participated in the study. There were total 8 boys and 2 girls in the survey. Also, a total of 3 people already had spectacles while one of the respondent had performed a LASIK surgery to remove the spectacles.
+
+A lot of interesting findings were found in this user study. Five respondents were able to check their eyes and confirm that their vision is normal as described by the other application as well. Also, three of the respondents who had spectacles were able to find an almost accurate representation of their vision score proving that the results were genuine. To validate this claim, their spectacle tests also claimed proper vision score. There were 2 very interesting findings. First, a respondent who had conducted LASIK surgery (to remove lens) [14] found to have a 0.5 power score in one of the eyes. The same was found in both the applications along with the confirmation of low vision score in Both Eyes test (6/9, 50%). Hence, the respondent was advised to visit a doctor immediately. In another finding, one user who did not have spectacles initially was found to have a vision score of (6/9, 69%) in all the tests performed in both the applications. This was conclusive evidence that the respondent immediately required a doctor’s visit. 
+
+# Conclusion
+We proposed, designed and implanted a mobile eye-testing interface called Ocufy which would let the users check their eye vision with a mobile phone application. We designed the algorithm for finding accurate eye vision results by first researching the basics of finding eye vision score and about the Snellen chart and its optotypes. HCI methodologies helped us understand the importance of correct and accurate representation of optotypes for genuine eye test result where a scaling factor was devised for showing eye tests on mobile phones. It was found that the phone-to-face distance must be 68.76 times the topmost optotype. This distance factor was calculated and implemented by facial and eye tracking of the user. Finally, a test was shown to the user if the user was a certain minimum threshold distance away from the phone. The answers to these tests were then scaled back to the original Snellen chart results which stand as a standard form of eye vision calculations. The application provided an 85% Accuracy of correct result prediction (Ocufy Individual Eye Test w.r.t. the Original Eye Vision) with an over 80% applicants recommending it using again to get an initial screening of their vision.
+
+# Future Scope
+It is rightly said that ‘What do you do after you achieve one goal? You look for another one’. During the implementation of this system, it is found that there are instances and scopes where the system could be improved. Following was the observations:
+1) The face-to-phone distance measurement module can be kept completely running throughout the test which can pause the test if the user brings the phone nearby.
+2) The face detection module can be further calibrated to monitor the inclination angle of the phone. This can make sure that the user is holding the phone at a correct angle to provide much more accurate results.
+3) Provide relevant doctor suggestions in the nearby locality (using maps API) if the user requires to immediately check up with an ophthalmologist.
+4) Increase the functionality of the application by providing tests to check color blindness, astigmatism, contrast/sensitivity, cataract detection, duo-chrome acuity etc.
+
