@@ -29,7 +29,7 @@ Most of the professional and accurate eye testing solutions are developed for oc
 To overcome the issue of expensive software and due to the increased availability of smartphones, many software developers hopped on the idea of making an eye testing application for smartphones. While this is a novel idea with which user can easily check their eye vision instantly, it seldom provides any accurate results. The main reason being that the same test is provided for every screen size and every person irrespective of the distance at which they are holding their phones.
 
 <p align="center">
-  ![Incorrect](img/incor.png)
+  <img src="img/incor.png"/>
 </p>
 
 
